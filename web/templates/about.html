@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us · MCDA Xandão{% endblock %}
+
+{% block content %}
+  <section class="page-header container">
+    <h1>About Us</h1>
+    <p class="subtitle">
+      Conheça os princípios e a equipe por trás do MCDA Xandão, uma base moderna
+      para experiências de apoio à decisão.
+    </p>
+  </section>
+
+  <section class="about-grid container">
+    <article>
+      <h2>Missão</h2>
+      <p>
+        Entregar um boilerplate pragmático em Django que facilite testes de ideias,
+        prova de conceitos e aplicações reais de MCDA com foco em performance.
+      </p>
+    </article>
+    <article>
+      <h2>Valores</h2>
+      <ul>
+        <li>Experiências rápidas e consistentes</li>
+        <li>Design simples e flexível</li>
+        <li>Automação e testes desde o início</li>
+      </ul>
+    </article>
+    <article>
+      <h2>Equipe</h2>
+      <p>
+        Um grupo enxuto de engenheiros e designers apaixonados por MCDA, UX
+        e boas práticas de desenvolvimento.
+      </p>
+    </article>
+  </section>
+
+  <div class="container">
+    <a class="btn btn-link" href="{% url 'index' %}">Voltar para a Home</a>
+  </div>
+{% endblock %}

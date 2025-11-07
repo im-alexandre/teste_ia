@@ -1,0 +1,10 @@
+services:
+  web:
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: 1
+      DJANGO_COLLECTSTATIC: 0
+    volumes:
+      - ./web:/app
+    command: ["python", "manage.py", "runserver", "8000"]

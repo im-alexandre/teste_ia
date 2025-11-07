@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Início · MCDA Xandão{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <div class="decor decor-1"></div>
+    <div class="decor decor-2"></div>
+    <div class="hero-inner container">
+      <h1>
+        Decisões mais inteligentes com um
+        <span class="gradient">MCDA moderno</span>
+      </h1>
+      <p class="subtitle">
+        Uma base elegante em Django para experimentos e aplicações de apoio à decisão
+        com foco em performance, UX e mantenibilidade.
+      </p>
+      <div class="cta">
+        <a class="btn btn-lg" href="#recursos">Explorar recursos</a>
+        <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
+        <a class="btn btn-link" href="/admin/">Ir para o Admin</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="recursos" class="features container">
+    <div class="feature">
+      <div class="icon">⚡</div>
+      <h3>Rápido</h3>
+      <p>Pipeline simples e estático com WhiteNoise e assets otimizados.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🎯</div>
+      <h3>Focado</h3>
+      <p>Estrutura de templates modular para manter o front enxuto.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🧩</div>
+      <h3>Extensível</h3>
+      <p>CSS com variáveis e utilidades prontas para escalar.</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="about container">
+    <h2>Sobre</h2>
+    <p>
+      Este projeto oferece um ponto de partida moderno com Django, templates
+      organizados e estáticos separados. Ideal para construir interfaces limpas
+      e responsivas rapidamente.
+    </p>
+  </section>
+{% endblock %}
